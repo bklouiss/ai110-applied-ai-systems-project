@@ -2,6 +2,8 @@
 
 ## Project Context (for AI assistants and collaborators)
 
+## Video Demo Link: https://drive.google.com/file/d/1bDQEj5l1BfCPYs7txH6j9oen0nQ94YwN/view?usp=sharing
+
 This is the final capstone project for the AI110 Applied AI Systems course. It extends **DocuBot** (Module 4 Tinker) into a multi-agent RAG system for coding assistance. The developer works between the terminal (Claude Code CLI) and VSCode (Claude Code extension). This README is the primary context file — read it in full before suggesting changes or implementations.
 
 **Tech stack:** Python 3.11+, Anthropic Claude API, ChromaDB, sentence-transformers, Streamlit, python-dotenv, pytest  
