@@ -12,7 +12,7 @@ from models import ExplainerInput, ExplainerResult
 import anthropic
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(".env.local")
 
 
 class ExplainerAgent:

@@ -21,7 +21,7 @@ from agents.orchestrator import Orchestrator
 import anthropic
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(".env.local")
 
 _MODE_LABELS = {
     1: "1 — Naive LLM",

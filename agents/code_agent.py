@@ -12,7 +12,7 @@ from models import CodeInput, CodeResult
 import anthropic
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(".env.local")
 
 
 class CodeAgent:

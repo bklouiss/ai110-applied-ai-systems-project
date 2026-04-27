@@ -105,16 +105,14 @@ pip install -r requirements.txt
 Copy the environment template:
 
 ```bash
-cp .env.example .env
+cp .env.example .env.local
 ```
 
-Edit `.env` and add your Anthropic API key:
+Edit `.env.local` and add your Anthropic API key:
 
 ```
 ANTHROPIC_API_KEY=your_api_key_here
 ```
-
-Retrieval-only mode (Mode 2) works without an API key.
 
 ### 5. Build the knowledge base index
 
@@ -134,8 +132,21 @@ streamlit run app.py
 ```
 
 **CLI mode:**
+
+CLI mode runs AlgoAssist through the terminal instead of the browser UI. It does the same thing — picks a mode, takes your query, runs the pipeline — but output is printed to stdout with section headers instead of rendered in a Streamlit UI. Useful for scripting, quick tests, or running without a browser.
+
+Pass arguments directly:
+```bash
+python main.py --query "How does binary search work?" --mode 4
+```
+
+Or run with no arguments for an interactive prompt:
 ```bash
 python main.py
+```
+```
+Your question: How does binary search work?
+Mode [1-4] (default 4): 4
 ```
 
 ### 7. Run tests
